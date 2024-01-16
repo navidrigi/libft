@@ -1,6 +1,6 @@
 NAME		= 	libft.a
 CC			= 	gcc
-CFLAGS		= 	-Wall -Werror -Wextra -g3
+CFLAGS		= 	-Wall -Werror -Wextra
 AR			= 	ar rcs
 SRC			= 	ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_strlen \
 				ft_memset ft_bzero ft_memcpy ft_memmove ft_strlcpy ft_strlcat \
@@ -12,14 +12,11 @@ BONUS_SRC	=	ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast \
 				ft_lstadd_back ft_lstdelone ft_lstclear ft_lstiter \
 				ft_lstmap
 SRCS		=	$(addsuffix .c, $(SRC))
-OBJS		=	$(addsuffix .o, $(SRC))
+OBJS		=	$(addprefix obj/, $(addsuffix .o, $(SRC)))
 BONUS_SRCS	=	$(addsuffix .c, $(BONUS_SRC))
-BONUS_OBJS	=	$(addsuffix .o, $(BONUS_SRC))
+BONUS_OBJS	=	$(addprefix obj/, $(addsuffix .o, $(BONUS_SRC)))
 
 all: $(NAME)
-
-.c.o: $(SRCS) $(BONUS_SRCS)
-	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
@@ -27,12 +24,17 @@ $(NAME): $(OBJS)
 bonus: $(OBJS) $(BONUS_OBJS)
 	$(AR) $(NAME) $^
 
+obj/%.o: %.c
+	mkdir -p obj
+	$(CC) $(CFLAGS) -c $< -o $@
+
 .PHONY: all clean fclean re bonus
 
 clean:
-	rm -f *.o
+	rm -f obj/*.o
+	rm -rf obj
 
 fclean: clean
 	rm -f $(NAME)
 
-re: clean all
+re: fclean all
