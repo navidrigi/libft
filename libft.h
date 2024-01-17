@@ -12,8 +12,14 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <stdio.h>
 # include <stdlib.h>
+# include <unistd.h>
+# include <ctype.h>
+# include <string.h>
+# include <stdint.h>
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -32,7 +38,6 @@ int				ft_isprint(int c);
 char			*ft_itoa(int n);
 int				num_len(int n);
 void			*ft_memcpy(void *s1, const void *s2, size_t n);
-char			*calcs(int n, char *ptr, int len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_memmove(void *dest, const void *src, size_t n);
@@ -45,6 +50,8 @@ char			**ft_split(char const *s, char c);
 char			*ft_strchr(const char *s, int c);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strjoin(char const *s1, char const *s2);
+void			ft_strcpy(char *dest, const char *src);
+void			ft_strcat(char *dest, const char *src);
 void			ft_strcpy(char *dest, const char *src);
 void			ft_strcat(char *dest, const char *src);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);

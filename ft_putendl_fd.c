@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
 
-// void	ft_putendl_fd(char *s, int fd);
-// void	ft_putchar_fd(char c, int fd);
-// void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd)
+{
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
+}
 
 // int main()
 // {
@@ -25,9 +25,3 @@
 //     ft_putendl_fd(str, fd);
 //     return 0;
 // }
-
-void	ft_putendl_fd(char *s, int fd)
-{
-	ft_putstr_fd(s, fd);
-	write(fd, "\n", 1);
-}

@@ -10,25 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
-char		*ft_strtrim(char const *s1, char const *set);
 static int	is_in_set(char const c, char const *set);
-
-// int main()
-// {
-//     char const str1[] = "   Hello, World!   ";
-//     char const trimset[] = " \t\n";
-//     char *new_str = ft_strtrim(str1, trimset);
-//     if (new_str == NULL)
-//         printf("Failed\n");
-//     else
-//         printf("%s\n", new_str);
-//     free(new_str);
-//     return (0);
-// }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -63,3 +47,16 @@ static int	is_in_set(char const c, char const *set)
 	}
 	return (0);
 }
+
+// int main()
+// {
+//     char const str1[] = "   Hello, World!   ";
+//     char const trimset[] = " \t\n";
+//     char *new_str = ft_strtrim(str1, trimset);
+//     if (new_str == NULL)
+//         printf("Failed\n");
+//     else
+//         printf("%s\n", new_str);
+//     free(new_str);
+//     return (0);
+// }

@@ -10,48 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
-// #include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
-
-char	*ft_strdup(const char *s1);
-
-// int main()
-// {
-//     char *str = "Hello, world!";
-//     char *dup = strdup(str);
-//     printf("%s\n", str);
-//     printf("%s\n", dup);
-//     free(dup);
-//     printf("................\n");
-//     // now, my strdup
-//     char *dup2 = strdup(str);
-//     printf("%s\n", str);
-//     printf("%s\n", dup2);
-//     free(dup2);
-//     return (0);
-// }
-
-// char	*ft_strdup(const char *s)
-// {
-// 	size_t	i;
-// 	char	*str;
-
-// 	i = 0;
-// 	if (!s)
-// 		return (NULL);
-// 	str = (char *) malloc((ft_strlen(s) + 1) * sizeof(*s));
-// 	if (!str)
-// 		return (NULL);
-// 	while (s[i])
-// 	{
-// 		str[i] = s[i];
-// 		i++;
-// 	}
-// 	str[i] = '\0';
-// 	return (str);
-// }
 
 char	*ft_strdup(const char *s1)
 {
@@ -74,3 +33,19 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
+
+// int main()
+// {
+//     char *str = "Hello, world!";
+//     char *dup = strdup(str);
+//     printf("%s\n", str);
+//     printf("%s\n", dup);
+//     free(dup);
+//     printf("................\n");
+//     // now, my strdup
+//     char *dup2 = strdup(str);
+//     printf("%s\n", str);
+//     printf("%s\n", dup2);
+//     free(dup2);
+//     return (0);
+// }

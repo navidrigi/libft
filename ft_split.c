@@ -10,27 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "libft.h"
-
-// int main()
-// {
-//     char const *test_str = "Hello,42,Guys";
-//     char **split_output;
-//     size_t index;
-
-//     split_output = ft_split(test_str, ',');
-
-//     for (index = 0; split_output[index]; index++)
-//     {
-//         printf("%s\n", split_output[index]);
-//         free(split_output[index]);
-//     }
-//     free(split_output);
-//     return 0;
-// }
 
 char	*ft_strndup(const char *s, size_t n)
 {
@@ -110,3 +90,20 @@ char	**ft_split(char const *s, char c)
 	strlist[i] = NULL;
 	return (strlist);
 }
+
+// int main()
+// {
+//     char const *test_str = "Hello,42,Guys";
+//     char **split_output;
+//     size_t index;
+
+//     split_output = ft_split(test_str, ',');
+
+//     for (index = 0; split_output[index]; index++)
+//     {
+//         printf("%s\n", split_output[index]);
+//         free(split_output[index]);
+//     }
+//     free(split_output);
+//     return 0;
+// }

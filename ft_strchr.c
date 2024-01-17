@@ -10,35 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-char	*ft_strchr(const char *s, int c);
-
-// int main()
-// {
-// 	char str[] = "helo";
-// 	int c = 'e';
-//     char *final = strchr(str, c);
-//     if (final == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final);
-//     char *final2 = ft_strchr(str, c);
-//     if (final2 == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final2);
-// }
-
-// char	*ft_strchr(const char *str, int c)
-// {
-// 	while (*str && *str != c)
-// 		str++;
-// 	if (*str == c)
-// 		return ((char *)str);
-// 	return ((char *) NULL);
-// }
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -55,3 +27,19 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+// int main()
+// {
+// 	char str[] = "helo";
+// 	int c = 'e';
+//     char *final = strchr(str, c);
+//     if (final == NULL)
+//         printf("Not found\n");
+//     else
+//         printf("%s\n", final);
+//     char *final2 = ft_strchr(str, c);
+//     if (final2 == NULL)
+//         printf("Not found\n");
+//     else
+//         printf("%s\n", final2);
+// }

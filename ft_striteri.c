@@ -10,21 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
 #include "libft.h"
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-// void	example_func(unsigned int i, char *c);
-
-// int main()
-// {
-//     char s[] = "HELLO";
-//     ft_striteri(s, example_func);
-//     printf("%s\n", s);
-//     // The modified string s will contain "HIQRS"
-//     return 0;
-// }
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
@@ -39,3 +25,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+// int main()
+// {
+//     char s[] = "HELLO";
+//     ft_striteri(s, example_func);
+//     printf("%s\n", s);
+//     // The modified string s will contain "HIQRS"
+//     return 0;
+// }

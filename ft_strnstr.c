@@ -10,11 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+
+	if (*little == '\0')
+		return ((char *)big);
+	i = ft_strlen(little);
+	while (*big && i <= len)
+	{
+		if (*big == *little && ft_strncmp(big, little, i) == 0)
+			return ((char *)big);
+		big++;
+		len--;
+	}
+	return (NULL);
+}
 
 // int main()
 // {
@@ -38,20 +51,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 //         printf("%s\n", found2);
 //     return (0);
 // }
-
-char	*ft_strnstr(const char *big, const char *little, size_t len)
-{
-	size_t	i;
-
-	if (*little == '\0')
-		return ((char *)big);
-	i = ft_strlen(little);
-	while (*big && i <= len)
-	{
-		if (*big == *little && ft_strncmp(big, little, i) == 0)
-			return ((char *)big);
-		++big;
-		--len;
-	}
-	return (NULL);
-}
