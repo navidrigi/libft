@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_toupper(int c);
+int	ft_toupper(int c)
+{
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
+}
 
 // int main()
 // {
@@ -22,10 +26,3 @@ int	ft_toupper(int c);
 //     int d = 111;
 //     printf("%d\n", ft_toupper(d));
 // }
-
-int	ft_toupper(int c)
-{
-	if (c >= 97 && c <= 122)
-		c -= 32;
-	return (c);
-}
