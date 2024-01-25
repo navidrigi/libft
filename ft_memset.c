@@ -26,15 +26,3 @@ void	*ft_memset(void *dest, int c, size_t n)
 	}
 	return (dest);
 }
-
-// int main()
-// {
-//     char dest[] = "hey you all";
-//     int c = 'a';
-//     size_t n = 8;
-//     memset(dest, c, n);
-//     printf("%s\n", dest);
-//     char str[] = "hey you all";
-//     ft_memset(str, c, n);
-//     printf("%s\n", str);
-// }

@@ -10,21 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-
-int			ft_atoi(const char *nptr);
-static int	is_white(char c);
-
-// int main()
-// {
-//     char *str = "+123 45 ";
-//     int num = atoi(str);
-//     printf("%d\n", num);
-//     int num2 = ft_atoi(str);
-//     printf("%d\n", num2);
-//     return 0;
-// }
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -33,7 +19,7 @@ int	ft_atoi(const char *nptr)
 
 	sign = 1;
 	result = 0;
-	while (is_white(*nptr))
+	while (*nptr == ' ' || (*nptr >= 9 && *nptr <= 13))
 		nptr++;
 	if (*nptr == '-')
 	{
@@ -48,12 +34,4 @@ int	ft_atoi(const char *nptr)
 		nptr++;
 	}
 	return (result * sign);
-}
-
-static int	is_white(char c)
-{
-	if (c == '\t' || c == '\n' || c == '\v' || c == '\f'
-		|| c == '\r' || c == ' ')
-		return (1);
-	return (0);
 }

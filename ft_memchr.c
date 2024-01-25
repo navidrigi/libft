@@ -10,26 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
-#include <stdio.h>
-
-void	*ft_memchr(const void *s, int c, size_t n);
-
-// int main()
-// {
-//     const char *str = "hello";
-//     size_t n = 5;
-//     char *final = memchr(str, 'r', n);
-//     if (final == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final);
-//     char *final2 = ft_memchr(str, 'r', n);
-//     if (final2 == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final2);
-// }
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

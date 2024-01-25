@@ -34,12 +34,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	return (i);
 }
-
-// int main()
-// {
-//     char src[] = "hoy";
-//     char dest2[] = "hello";
-//     size_t size = 5;
-//     printf("%ld\n", ft_strlcpy(dest2, src, size));
-//     printf("%s\n", dest2);
-// }

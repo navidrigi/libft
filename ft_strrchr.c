@@ -29,18 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (last_occurence);
 }
-
-// int main()
-// {
-//     char *str = "yo yo, guys";
-//     char *final = strrchr(str, ' ');
-//     if (final == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final);
-//     char *final2 = ft_strrchr(str, ' ');
-//     if (final2 == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", final2);
-// }

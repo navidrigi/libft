@@ -35,14 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_str[len] = '\0';
 	return (new_str);
 }
-
-// int main()
-// {
-//     char s[] = "HELLO";
-//     char *new_str = ft_strmapi(s, example_func);
-//     printf("%s\n", new_str);
-//     // The new string will contain "HIQRS"
-//     // ... use the new_str and don't forget to free the allocated memory
-//     free(new_str);
-//     return 0;
-// }

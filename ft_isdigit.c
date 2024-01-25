@@ -10,17 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int	ft_isdigit(int c);
-
-// int main()
-// {
-//     char c = 57;
-//     printf("%d\n", isdigit(c));
-//     printf("%d\n", ft_isdigit(c));
-// }
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

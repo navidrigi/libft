@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-// int main()
-// {
-//     const char str[] = " dfad r ";
-//     printf("%ld\n", strlen(str));
-//     printf("%ld\n", ft_strlen(str));
-// }

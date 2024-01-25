@@ -28,26 +28,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// int main()
-// {
-//     // size_t len;
-//     char *haystack = "Hello, world!";
-//     char *needle = "world";
-
-//     // len = 0;
-//     // while (needle)
-//     //     len++;
-// 	size_t n = 13;
-//     char *found = strnstr(haystack, needle, n);
-//     if (found == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", found);
-//     char *found2 = ft_strnstr(haystack, needle, n);
-//     if (found2 == NULL)
-//         printf("Not found\n");
-//     else
-//         printf("%s\n", found2);
-//     return (0);
-// }

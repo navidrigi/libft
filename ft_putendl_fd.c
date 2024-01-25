@@ -17,11 +17,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
-
-// int main()
-// {
-//     char *str = "Hello, World!";
-//     int fd = 1;
-//     ft_putendl_fd(str, fd);
-//     return 0;
-// }

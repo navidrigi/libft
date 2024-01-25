@@ -10,17 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int	ft_isprint(int c);
-
-// int main()
-// {
-//     char c = 43;
-//     printf("%d\n", isprint(c));
-//     printf("%d\n", ft_isprint(c));
-// }
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

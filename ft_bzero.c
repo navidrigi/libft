@@ -10,21 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
-#include <stdio.h>
-
-void	ft_bzero(void *s, size_t n);
-
-// int main()
-// {
-//     char s[] = "hello";
-//     size_t n = 3;
-//     bzero(s+4, n);
-//     printf("%s\n", s);
-//     char s2[] = "hello";
-//     ft_bzero(s2+4, n);
-//     printf("%s\n", s2);
-// }
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

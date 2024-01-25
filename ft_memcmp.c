@@ -10,19 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-
-// int main()
-// {
-//     char *s1 = "helli";
-//     char *s2 = " ";
-//     size_t n = 3;
-//     printf("%d\n", memcmp(s1, s2, n));
-//     printf("%d\n", ft_memcmp(s1, s2, n));
-// }
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

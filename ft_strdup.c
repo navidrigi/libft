@@ -33,19 +33,3 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-
-// int main()
-// {
-//     char *str = "Hello, world!";
-//     char *dup = strdup(str);
-//     printf("%s\n", str);
-//     printf("%s\n", dup);
-//     free(dup);
-//     printf("................\n");
-//     // now, my strdup
-//     char *dup2 = strdup(str);
-//     printf("%s\n", str);
-//     printf("%s\n", dup2);
-//     free(dup2);
-//     return (0);
-// }

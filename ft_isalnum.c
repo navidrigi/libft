@@ -10,17 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int	ft_isalnum(int c);
-
-// int main()
-// {
-//     char c = 50;
-//     printf("%d\n", isalnum(c));
-//     printf("%d\n", ft_isalnum(c));
-// }
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

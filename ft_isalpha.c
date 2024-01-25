@@ -10,19 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int	ft_isalpha(int c);
-
-// int	main(void)
-// {
-// 	char	c;
-
-// 	c = 98;
-// 	printf("%d\n", isalpha(c));
-// 	printf("%d\n", ft_isalpha(c));
-// }
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

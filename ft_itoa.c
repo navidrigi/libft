@@ -10,21 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char			*ft_itoa(int n);
-static int		num_len(int n);
-
-// int main()
-// {
-//     int num = 2;
-//     char *str = ft_itoa(num);
-//     printf("Number: %d\n", num);
-//     printf("String: %s\n", str);
-//     free(str);
-//     return 0;
-// }
+static int	num_len(int n);
 
 char	*ft_itoa(int n)
 {
@@ -36,7 +24,7 @@ char	*ft_itoa(int n)
 	nl = n;
 	if (n < 0)
 		nl *= -1;
-	result = malloc((len + 1) * sizeof(char));
+	result = (char *) malloc((len + 1) * sizeof(char));
 	if (!result)
 		return (NULL);
 	result[len] = 0;
